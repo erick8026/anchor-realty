@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anchor Realty — Miami Real Estate</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .hero-bg {
+      background-image: linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.3) 100%),
+        url('https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+    .card-img { transition: transform 0.4s ease; }
+    .card-img:hover { transform: scale(1.04); }
+    .lia-btn {
+      background: linear-gradient(135deg, #0ea5e9, #2563eb);
+      transition: opacity 0.2s;
+    }
+    .lia-btn:hover { opacity: 0.88; }
+    .badge { background: rgba(255,255,255,0.12); backdrop-filter: blur(8px); }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- NAV -->
+  <nav class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 bg-blue-700 rounded-lg flex items-center justify-center">
+          <span class="text-white font-bold text-sm">A</span>
+        </div>
+        <span class="text-xl font-700 text-gray-900 font-bold">Anchor Realty</span>
+      </div>
+      <div class="hidden md:flex items-center gap-6 text-sm font-medium text-gray-600">
+        <a href="#listings" class="hover:text-blue-700 transition">Listings</a>
+        <a href="#how" class="hover:text-blue-700 transition">How It Works</a>
+        <a href="sms:+17542871635?body=Hi LIA!" class="lia-btn text-white px-5 py-2.5 rounded-full text-sm font-semibold">
+          Text LIA ✉
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-bg min-h-[520px] flex items-center">
+    <div class="max-w-6xl mx-auto px-6 py-20 text-white">
+      <div class="badge inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-6 border border-white/20">
+        🏙 Miami Real Estate
+      </div>
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4 max-w-2xl">
+        Find Your Perfect<br/>Miami Home
+      </h1>
+      <p class="text-white/80 text-lg mb-8 max-w-xl">
+        Browse our curated listings and connect instantly with LIA, your AI real estate assistant — right from your phone.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="sms:+17542871635?body=Hi LIA, I want to find a home in Miami!"
+           class="lia-btn px-8 py-4 rounded-full text-white font-bold text-base shadow-lg flex items-center gap-2">
+          <span>💬</span> Text LIA Now
+        </a>
+        <a href="#listings"
+           class="bg-white/15 backdrop-blur border border-white/30 px-8 py-4 rounded-full text-white font-semibold text-base hover:bg-white/25 transition">
+          View Listings
+        </a>
+      </div>
+      <p class="text-white/50 text-xs mt-4">↓ No app needed — opens your SMS app</p>
+    </div>
+  </section>
+
+  <!-- LISTINGS -->
+  <section id="listings" class="max-w-6xl mx-auto px-6 py-20">
+    <div class="flex justify-between items-end mb-10">
+      <div>
+        <p class="text-blue-600 font-semibold text-sm uppercase tracking-wide mb-1">Available Now</p>
+        <h2 class="text-3xl font-bold text-gray-900">Featured Listings</h2>
+      </div>
+      <span class="text-sm text-gray-500 hidden md:block">4 properties in Miami, FL</span>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- PROP 001 -->
+      <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition">
+        <div class="overflow-hidden h-56">
+          <img class="card-img w-full h-full object-cover"
+               src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80"
+               alt="Casa en Coral Gables" />
+        </div>
+        <div class="p-6">
+          <div class="flex justify-between items-start mb-3">
+            <div>
+              <span class="text-xs font-semibold bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full">House</span>
+              <h3 class="text-lg font-bold text-gray-900 mt-1">Coral Gables Estate</h3>
+              <p class="text-sm text-gray-500">234 Alhambra Cir, Coral Gables, FL 33134</p>
+            </div>
+            <p class="text-2xl font-extrabold text-blue-700 whitespace-nowrap">$875,000</p>
+          </div>
+          <div class="flex gap-4 text-sm text-gray-600 mb-4">
+            <span>🛏 4 beds</span>
+            <span>🚿 3 baths</span>
+            <span>📐 2,450 sqft</span>
+          </div>
+          <p class="text-sm text-gray-500 mb-5">Pool, chef's kitchen, 2-car garage. Quiet street in prestigious Coral Gables.</p>
+          <a href="sms:+17542871635?body=Hi LIA! I'm interested in the Coral Gables Estate at $875,000"
+             class="lia-btn block text-center text-white font-semibold py-3 rounded-xl">
+            💬 Text LIA about this property
+          </a>
+        </div>
+      </div>
+
+      <!-- PROP 002 -->
+      <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition">
+        <div class="overflow-hidden h-56">
+          <img class="card-img w-full h-full object-cover"
+               src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80"
+               alt="Apartamento en Brickell" />
+        </div>
+        <div class="p-6">
+          <div class="flex justify-between items-start mb-3">
+            <div>
+              <span class="text-xs font-semibold bg-purple-100 text-purple-700 px-2 py-0.5 rounded-full">Apartment</span>
+              <h3 class="text-lg font-bold text-gray-900 mt-1">Brickell Skyline Unit</h3>
+              <p class="text-sm text-gray-500">1100 S Miami Ave #2204, Miami, FL 33130</p>
+            </div>
+            <p class="text-2xl font-extrabold text-blue-700 whitespace-nowrap">$465,000</p>
+          </div>
+          <div class="flex gap-4 text-sm text-gray-600 mb-4">
+            <span>🛏 2 beds</span>
+            <span>🚿 2 baths</span>
+            <span>📐 1,050 sqft</span>
+          </div>
+          <p class="text-sm text-gray-500 mb-5">Floor-to-ceiling windows with Miami skyline views. Gym, concierge, rooftop terrace.</p>
+          <a href="sms:+17542871635?body=Hi LIA! I'm interested in the Brickell Skyline Unit at $465,000"
+             class="lia-btn block text-center text-white font-semibold py-3 rounded-xl">
+            💬 Text LIA about this property
+          </a>
+        </div>
+      </div>
+
+      <!-- PROP 003 -->
+      <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition">
+        <div class="overflow-hidden h-56">
+          <img class="card-img w-full h-full object-cover"
+               src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80"
+               alt="Casa en Kendall" />
+        </div>
+        <div class="p-6">
+          <div class="flex justify-between items-start mb-3">
+            <div>
+              <span class="text-xs font-semibold bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full">House</span>
+              <h3 class="text-lg font-bold text-gray-900 mt-1">Kendall Family Home</h3>
+              <p class="text-sm text-gray-500">8765 SW 142nd Ave, Miami, FL 33183</p>
+            </div>
+            <p class="text-2xl font-extrabold text-blue-700 whitespace-nowrap">$389,000</p>
+          </div>
+          <div class="flex gap-4 text-sm text-gray-600 mb-4">
+            <span>🛏 3 beds</span>
+            <span>🚿 2 baths</span>
+            <span>📐 1,850 sqft</span>
+          </div>
+          <p class="text-sm text-gray-500 mb-5">Large backyard, A-rated schools, quiet neighborhood. Perfect for families.</p>
+          <a href="sms:+17542871635?body=Hi LIA! I'm interested in the Kendall Family Home at $389,000"
+             class="lia-btn block text-center text-white font-semibold py-3 rounded-xl">
+            💬 Text LIA about this property
+          </a>
+        </div>
+      </div>
+
+      <!-- PROP 004 -->
+      <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition">
+        <div class="overflow-hidden h-56">
+          <img class="card-img w-full h-full object-cover"
+               src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80"
+               alt="Apartamento en Edgewater" />
+        </div>
+        <div class="p-6">
+          <div class="flex justify-between items-start mb-3">
+            <div>
+              <span class="text-xs font-semibold bg-purple-100 text-purple-700 px-2 py-0.5 rounded-full">Apartment</span>
+              <h3 class="text-lg font-bold text-gray-900 mt-1">Edgewater Bay View</h3>
+              <p class="text-sm text-gray-500">480 NE 31st St #1507, Miami, FL 33137</p>
+            </div>
+            <p class="text-2xl font-extrabold text-blue-700 whitespace-nowrap">$325,000</p>
+          </div>
+          <div class="flex gap-4 text-sm text-gray-600 mb-4">
+            <span>🛏 1 bed</span>
+            <span>🚿 1 bath</span>
+            <span>📐 780 sqft</span>
+          </div>
+          <p class="text-sm text-gray-500 mb-5">Biscayne Bay views, rooftop pool, modern finishes. Steps from Wynwood & Design District.</p>
+          <a href="sms:+17542871635?body=Hi LIA! I'm interested in the Edgewater Bay View at $325,000"
+             class="lia-btn block text-center text-white font-semibold py-3 rounded-xl">
+            💬 Text LIA about this property
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how" class="bg-blue-700 py-20">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <p class="text-blue-200 font-semibold text-sm uppercase tracking-wide mb-2">Simple & Fast</p>
+      <h2 class="text-3xl font-bold text-white mb-12">How LIA Works</h2>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="text-center">
+          <div class="w-14 h-14 bg-white/15 rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl">💬</div>
+          <h3 class="text-white font-bold text-lg mb-2">1. Text LIA</h3>
+          <p class="text-blue-200 text-sm">Tap the button on any listing. Your SMS app opens with a pre-filled message — just hit send.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-14 h-14 bg-white/15 rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl">🤖</div>
+          <h3 class="text-white font-bold text-lg mb-2">2. LIA Qualifies You</h3>
+          <p class="text-blue-200 text-sm">LIA asks a few quick questions to understand your needs, budget, and timeline — all via SMS.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-14 h-14 bg-white/15 rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl">📅</div>
+          <h3 class="text-white font-bold text-lg mb-2">3. Book a Call</h3>
+          <p class="text-blue-200 text-sm">Once ready, LIA schedules a 15-min call with a real agent — directly from the conversation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BOTTOM -->
+  <section class="max-w-6xl mx-auto px-6 py-20 text-center">
+    <h2 class="text-3xl font-bold text-gray-900 mb-4">Ready to find your home?</h2>
+    <p class="text-gray-500 mb-8 text-lg">LIA is available 24/7. No forms, no waiting — just text.</p>
+    <a href="sms:+17542871635?body=Hi LIA! I want to find a home in Miami."
+       class="lia-btn inline-block px-10 py-4 rounded-full text-white font-bold text-lg shadow-lg">
+      💬 Start Texting LIA
+    </a>
+    <p class="text-gray-400 text-sm mt-4">Opens your SMS app · No app download required</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-gray-200 py-8">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="flex items-center gap-2">
+        <div class="w-6 h-6 bg-blue-700 rounded flex items-center justify-center">
+          <span class="text-white font-bold text-xs">A</span>
+        </div>
+        <span class="font-semibold text-gray-700">Anchor Realty</span>
+      </div>
+      <p class="text-gray-400 text-sm">© 2026 Anchor Realty. All rights reserved.</p>
+      <a href="https://rodai.io" target="_blank"
+         class="text-sm text-gray-400 hover:text-blue-700 transition flex items-center gap-1">
+        Powered by <span class="font-semibold text-gray-600">RODAI</span> 🤖
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
